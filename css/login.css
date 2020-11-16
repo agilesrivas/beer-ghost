@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'ross';
+    src: url('/fonts/rosarina.ttf') format("truetype");
+}
+
+div ul {
+  list-style: none;
+  text-align: center;
+}
+div ul li {
+  display: inline-block;
+}
+div ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: ross;
+
+}
+div ul li a,
+div ul li a:after,
+div ul li a:before {
+  transition: all .5s;
+}
+div ul li a:hover {
+  color: white;
+}
+
+
+/* SHIFT */
+div.shift ul li a {
+  position:relative;
+  z-index: 1;
+  font-family: ross;
+}
+div.shift ul li a:hover {
+  color: white;
+  text-decoration: none;
+}
+div.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #d99927;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+div.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}

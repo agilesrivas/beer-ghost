@@ -1,0 +1,3 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["Fd8uB"]); }
+
+__d("XCollectionCreationDialogController",["XController"],(function a(b,c,d,e,f,g){f.exports=c("XController").create("/react_composer/collections/creation_dialog/",{composer_id:{type:"String"},privacy_placeholder_id:{type:"String"},shared_album_privacy_placeholder_id:{type:"String"}})}),null);

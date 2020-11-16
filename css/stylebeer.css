@@ -1,0 +1,139 @@
+body{
+  position: relative;
+}
+
+@font-face {
+    font-family: "ross";
+    src: url('../fonts/rosarina.ttf') format("truetype");
+}
+
+.navbar a{
+font-family: "ross", sans-serif !important;
+font-weight: bold;
+}
+h2{
+  font-family: ross !important;
+  font-weight: bolder !important;
+}
+/* NAVIGATION */
+#navbarbeer a {
+color: white !important;
+}
+
+#textlogo :hover{
+  font-style: oblique !important;
+  color: orange !important;
+
+}
+
+div a{
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+  /*quita line punteada*/
+  outline: none !important;
+}
+
+
+div a,
+div a:after,
+div a:before {
+transition: all .5s;
+}
+div  a: hover {
+color: black !important;
+}
+
+/* SHIFT */
+div.shift a {
+position:relative;
+z-index: 1;
+}
+div.shift a:hover {
+color: #EB9519;
+}
+div.shift a:after {
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+margin: auto;
+width: 100%;
+height: 1px;
+content: '.';
+color: transparent;
+background: #EB9519;
+visibility: none;
+opacity: 0;
+z-index: -1;
+}
+div.shift a:hover:after {
+opacity: 1;
+visibility: visible;
+height: 100%;
+}
+/* fin shift*/
+
+#btnnaranja {
+  color: #fff !important;
+  background-color: #EB9519 !important;
+  border-color: white !important;
+}
+#btnnaranja:hover{
+  color: black !important;
+  border-color: grey !important;
+}
+
+.modal{
+   font-family: ross !important;
+}
+#LabelLogin{
+  font-weight: bold ;
+
+}
+#nav-registrarse-tab, #nav-loguearse-tab{
+  color: black !important;
+}
+#nav-loguearse-tab:hover{
+  text-decoration: underline !important;
+  color: #EB9519 !important;
+}
+#nav-registrarse-tab:hover{
+  text-decoration: underline !important;
+  color: #EB9519 !important;
+}
+footer{
+background-color: black !important;
+height: 250px !important;
+/*position: relative !important;*/
+width: 100% !important;
+font-family: ross !important;
+color: white;
+font-weight: bold;
+}
+
+footer .secfooter{
+  height: 100% !important;
+  position: relative !important;
+  overflow:hidden !important;
+}
+footer a{
+  color: white !important;
+  font-family: ross !important;
+  padding: 0;
+  text-decoration: none !important;
+
+}
+footer a:hover{
+  font-style: italic !important;
+}
+
+#navbarbeer .scart a{
+  color: rgba(255, 102, 0, 255) !important;
+  text-decoration: none !important;
+}
